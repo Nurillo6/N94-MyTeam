@@ -284,9 +284,9 @@ body {
 
 .build-section {
     background-color: #012f34;
-    background-image: url("../images/build-bg1.svg"), url("../images/success-bg1.svg");
-    background-size: 100px 244px, 147px 100px;
-    background-position: right bottom, left top
+    background-image: url("../images/build-bg1.svg");
+    background-size: 100px 244px;
+    background-position: right bottom
 }
 
 .build {
@@ -334,6 +334,78 @@ body {
     margin-top: 58px
 }
 
+.build-item-content-wrapper>h3 {
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: #f67e7e
+}
+
+/* Build Tablet start */
+@media (max-width:884px){
+    .build-section{
+        padding: 100px 73px;
+        background-position: right top;
+    }
+    .build{
+        flex-direction: column;
+        gap: 64px;
+    }
+    .build-line{
+        margin-bottom: 32px;
+    }
+    .build-title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+    .build-title-wrapper{
+        width: 100%;
+        max-width: 445px;
+    }
+    .build-list{
+        margin-top: 0;
+    }
+    .build-item-content-wrapper{
+        width: 100%;
+    }
+    .build-item-content-wrapper > h3{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+    .build-item-content-wrapper > p{
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+}
+/* Build Tablet end */
+
+/* Build Mobile start  */
+@media (max-width:537px){
+    .build-section{
+        padding: 64px 0;
+    }
+    .build{
+        gap: 56px;
+    }
+    .build-title-wrapper{
+        width: 80% !important;
+    }
+    .build-list{
+        gap: 48px;
+    }
+    .build-item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .build-item-content-wrapper > h3{
+        margin-bottom: 8px;
+    }
+}
+/* Build Mobile end  */
+
+
 .build-item,
 .contact-item {
     display: flex;
@@ -347,12 +419,6 @@ body {
 .stories-list {
     display: -webkit-box;
     display: -ms-flexbox
-}
-
-.build-item-content-wrapper>h3 {
-    margin-bottom: 16px;
-    font-weight: 700;
-    color: #f67e7e
 }
 
 .build-item-content-wrapper>p {
